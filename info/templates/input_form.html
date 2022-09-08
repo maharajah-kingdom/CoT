@@ -1,0 +1,19 @@
+<html lang="ja">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>CoT | 文章の肝を掴め！</title>
+<meta charset="UTF-8">
+</head>
+  <body>
+  <p>何を分析したい？テキストを入力して送信をクリック！</p>
+    <form method="POST">{% csrf_token %}
+    <textarea id="target" name="target" rows="4" cols="40">{{ target }}</textarea><br>
+      <input type=submit>
+    </form>
+        <hr>
+<img class="fit-picture"
+     src="/media/wordcloud.png?20220825"
+       alt
+  onerror="this.onerror = null; this.src='';">
+  </body>
+</html>
